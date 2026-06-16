@@ -68,7 +68,7 @@ function Detail() {
         <section className="mt-6">
           <h2 className="font-display text-xl mb-3">Amenities</h2>
           <div className="grid grid-cols-2 gap-2">
-            {listing.amenities.map((a) => (
+            {listing.amenities.map((a: string) => (
               <div key={a} className="glass rounded-xl px-3 py-2.5 flex items-center gap-2 text-xs">
                 <Check className="h-3.5 w-3.5 text-gold" /> {a}
               </div>
